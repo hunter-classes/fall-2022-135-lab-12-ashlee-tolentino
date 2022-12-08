@@ -21,3 +21,17 @@ std::vector<int> makeVector(int n) {
   }
   return v;
 }
+
+/**
+   Task B: This function takes in a vector of integers and then returns a vector with only the positive integers in the same order.
+*/
+std::vector<int> goodVibes(const std::vector<int> v) {
+  std::vector<int> result;
+  for(int i = 0; i < v.size(); i++) {
+    if(v[i] >= 0) {
+      result.push_back(v[i]);
+    }
+  }
+  
+  return result;
+}
