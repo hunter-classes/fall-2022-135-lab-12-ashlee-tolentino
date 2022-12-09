@@ -68,10 +68,28 @@ int main()
 
   // Task D
   std::cout << "Task D\n\n";
-
-
-
-  
+  std::vector<int> v5;
+  v5.push_back(1);
+  v5.push_back(2);
+  v5.push_back(3);
+  std::cout << "First Vector Elements: \n";
+  for(int i = 0; i < v5.size(); i++) {
+    std::cout << v5[i] << std::endl;
+  }
+  std::vector<int> v6;
+  v6.push_back(4);
+  v6.push_back(5);
+  std::cout << "Second Vector Elements: \n";
+  for(int i = 0; i < v6.size(); i++) {
+    std::cout << v6[i] << std::endl;
+  }
+  std::cout << "\nsumPairWise(vect1, vect2);\n\n";
+  std::vector<int> result;
+  result = sumPairWise(v5, v6);
+  std::cout << "Pair Wise Sums:\n";
+  for(int i = 0; i < result.size(); i++) {
+    std::cout << result[i] << std::endl;
+  }
   
   return 0;
 }
