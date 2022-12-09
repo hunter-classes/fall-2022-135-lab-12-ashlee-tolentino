@@ -45,3 +45,34 @@ void gogeta(std::vector<int> &goku, std::vector<int> &vegeta) {
   }
   vegeta.clear();
 }
+
+/**
+   Task D: This function returns a vector of integers whose elements are the pairwise sum of the elements from the two vectors passed as arguments. If a vector has a smaller size than the other, consider extra entries from the shorter vectors as 0.
+*/
+std::vector<int> sumPairWise(std::vector<int> &v1, std::vector<int> &v2) {
+  std::vector<int> result;
+  std::vector<int> bigger;
+  if(v1.empty() == true && v2.empty() == true) {
+    return result;
+  }
+  else if(v1.empty() == true) {
+    result = v2;
+    return result;
+  }
+  else if(v2.empty() == true) {
+    result = v1;
+    return result;
+  }
+  else if(v2.size() > v1.size()) {
+    bigger = v2;
+  }
+  else {
+    bigger = v1;
+  }
+
+  for(int i = 0; i < bigger.size(); i++) {
+    result.push_back(v1[i] + v2[i]);
+  }
+  
+  return result;
+}
