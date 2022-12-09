@@ -35,6 +35,43 @@ int main()
   for(int i = 0; i < v2.size(); i++) {
     std::cout << v2[i] << std::endl;
   }
+  std::cout << "--------------------------------\n";
+
+  // Task C
+  std::cout << "Task C\n\n";
+  std::vector<int> v3;
+  v3.push_back(1);
+  v3.push_back(2);
+  v3.push_back(3);
+  std::cout << "First Vector Elements: \n";
+  for(int i = 0; i < v3.size(); i++) {
+    std::cout << v3[i] << std::endl;
+  }
+  std::vector<int> v4;
+  v4.push_back(4);
+  v4.push_back(5);
+  std::cout << "Second Vector Elements: \n";
+  for(int i = 0; i < v4.size(); i++) {
+    std::cout << v4[i] << std::endl;
+  }
+  std::cout << "\ngogeta(vect1, vect2);\n\n";
+  gogeta(v3, v4);
+  std::cout << "First Vector Elements: \n";
+  for(int i = 0; i < v3.size(); i++) {
+    std::cout << v3[i] << std::endl;
+  }
+  std::cout << "Second Vector Elements: \n";
+  for(int i = 0; i < v4.size(); i++) {
+    std::cout << v4[i] << std::endl;
+  }
+  std::cout << "--------------------------------\n";
+
+  // Task D
+  std::cout << "Task D\n\n";
+
+
+
+  
   
   return 0;
 }
